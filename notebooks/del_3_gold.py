@@ -1,6 +1,7 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC Sista delen i vår "Pipeline" - Gold
+# MAGIC Målet är att skapa en vy som är redo att konsumeras av olika användare
 
 # COMMAND ----------
 
@@ -9,7 +10,7 @@ import pandas as pd
 # COMMAND ----------
 
 # MAGIC %md 
-# MAGIC Läs in vår berikade tabell
+# MAGIC Läs in vår berikade tabell vi skapade i förra delen
 
 # COMMAND ----------
 

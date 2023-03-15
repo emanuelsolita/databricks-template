@@ -211,11 +211,12 @@ spark_df.write....
 
 
 # COMMAND ----------
+# MAGIC %md 
 # MAGIC Skapa en kalender-tabell för att berika data i nästa steg.
 # COMMAND ----------
 
 df = create_date_table() 
-
+df.head()
 
 # COMMAND ----------
 
