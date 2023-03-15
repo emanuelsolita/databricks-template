@@ -1,8 +1,5 @@
-# Databricks notebook source
 import pandas as pd
 from pandas.tseries.offsets import MonthEnd
-
-# COMMAND ----------
 
 def create_date_table(start='2000-01-01', end='2099-12-31'):
     df = pd.DataFrame({"Date": pd.date_range(start, end)})

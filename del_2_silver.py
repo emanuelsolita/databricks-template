@@ -24,7 +24,7 @@ spark
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC **Notera** att resultatet från SQL-frågan sparas i variabeln ```_sqldf```när man exekvera en SQL fråga med ```%sql select ...```
+# MAGIC **Notera** att resultatet från SQL-frågan sparas i variabeln ```_sqldf``` när man exekvera en SQL fråga med ```%sql select ...```
 # COMMAND ----------
 
 # MAGIC %md
@@ -54,8 +54,8 @@ spark_cal.show()
 # COMMAND ----------
 # MAGIC %md 
 # MAGIC Manuiplulera någon datum kolumn i tabellerna så att de får samma format. Lämpligt vis ```date``` i calendar och ```time_start```i eldatat. 
-# MAGIC Text manipulation: ```F.substring('date',1,10)````
-# MAGIC Omvanlda till date. ```F.to_date()````
+# MAGIC Text manipulation: ```F.substring('date',1,10)```
+# MAGIC Omvanlda till date. ```F.to_date()```
 # MAGIC Vi gör detta för att kunna joina in kalender data i vår tabell.
 # MAGIC ```df.withColumn/s('new/old column name', what should be the result in this new/old column)```
 # COMMAND ----------

@@ -77,14 +77,14 @@ spark
 # MAGIC - ```pyspark``` - Datahantering i spark. [docs](https://spark.apache.org/docs/3.1.3/api/python/index.html)
 # MAGIC 
 # MAGIC Skapa en funktion som loopar över en array med datum för att hämta historisk data
-# MAGIC Dagens datum ```date.today().strftime("%Y-%m-%d")```. Datum-Array i pandas: ```pd.date_range(start,end).strftime("%Y-%m-%d")````
+# MAGIC Dagens datum ```date.today().strftime("%Y-%m-%d")```. Datum-Array i pandas: ```pd.date_range(start,end).strftime("%Y-%m-%d")```
 
 # COMMAND ----------
 
-PRISKLASS = 
-start_date = 
-end_date = 
-DATUM =  # Format: List(YYYY-MM-DD)
+PRISKLASS = ...
+start_date = ...
+end_date = ...
+DATUM =  ...# Format: List(YYYY-MM-DD)
 DATUM 
 
 # COMMAND ----------
@@ -133,8 +133,10 @@ schema = StructType([ \
 type(schema)
 
 # COMMAND ----------
-# Skapa en spark Dataframe och visa den inline
-spark_df = spark.createDataFrame(data=data, schema=schema)
+# MAGIC Skapa en spark Dataframe: ```spark.createDataFrame(data=data, schema=schema)```
+# COMMAND ----------
+
+spark_df = ...
 
 # COMMAND ----------
 
@@ -143,7 +145,7 @@ spark_df = spark.createDataFrame(data=data, schema=schema)
 
 # COMMAND ----------
 
-spark_df.printSchema()
+
 
 # COMMAND ----------
 
@@ -152,7 +154,6 @@ spark_df.printSchema()
 
 # COMMAND ----------
 
-display(spark_df)
 
 # COMMAND ----------
 
@@ -161,7 +162,7 @@ display(spark_df)
 
 # COMMAND ----------
 
-spark_df.describe().show()
+
 
 # COMMAND ----------
 
@@ -192,7 +193,7 @@ spark_df.describe().show()
 
 # COMMAND ----------
 
-spark_df.write...
+spark_df.write....
 
 # COMMAND ----------
 
