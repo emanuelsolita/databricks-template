@@ -1,5 +1,7 @@
 # Databricks notebook source
 
+#!pip install prophet==1.1.2 numpy==1.21
+# COMMAND ----------
 import pandas as pd
 import numpy as np 
 from matplotlib import pyplot as plt
